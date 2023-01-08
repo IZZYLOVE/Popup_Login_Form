@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="css/style_login.css">
+<body>
+
+<div class="center">
+    <button id="show-login">Login</button>
+</div>
+<section class="popup">
+    <div class="close-btn">&times;</div>
+  <div class='form'> 
+    <h2>Login</h2>
+
+<div class="form-element">
+    <label>Email</label>
+	<input type="text" name="detail" placeholder="email or phone" title="enter email or phone number" tabindex="1" translate="yes"><br>
+</div>
+<div class="form-element">
+    <label>password</label>
+	<input type="password" name="password" placeholder="password" title="enter password" tabindex="2" translate="yes"><br>
+</div>
+<div class="form-element">
+    <input type="checkbox" id="remenber-me">
+    <label for="remember-me">Remember me</label>
+</div>
+<div class="form-element">
+    <button>Sign in</button>
+</div>
+<div class="form-element">
+    <a href="#">Forgot password?</a>
+</div>
+</div>
+  
+</section>
+
+
+</body>
+
+
+<script>
+    document.querySelector("#show-login")
+    .addEventListener("click", function(){
+        document.querySelector(".popup").classList.add("active");
+    })
+    document.querySelector(".popup .close-btn")
+    .addEventListener("click", function(){
+        document.querySelector(".popup").classList.remove("active");
+    })
+</script>
